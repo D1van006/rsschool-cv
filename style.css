@@ -1,0 +1,366 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth; 
+  }
+h2 {
+    margin-bottom: 10px;
+}
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    
+}
+.background {
+    background: url(./assets/img/Sky_Clouds_474792_3840x2400.jpg), rgba(255,255,255,0.6);
+    background-blend-mode: color;
+    background-size: cover;
+}
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+
+}
+.container {
+    max-width: 1440px;
+    min-width: 300px;
+    margin: 0 auto;
+}
+.header-main{
+    background:linear-gradient( grey, 50%,transparent);
+}
+.footer-main{
+    background:linear-gradient(  transparent, 50%, grey);
+}
+
+.wrapper {
+    padding: 0 20px;
+}
+
+p {
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+.nav {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100px;
+}
+
+.nav-list {
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-end;
+
+    height: 120px;
+    margin-top: 0;
+    flex-wrap: wrap;
+    padding: 0;
+}
+.nav-item {
+    display: flex;
+    color: white;
+    padding: 0 10px;
+    list-style-type: none;
+    align-items: center;
+}
+
+a:hover {
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+
+    transition: .5s
+}
+
+.circulfoto {
+    display: flex;
+    max-width: 350px;
+    max-width: 350px;
+    overflow: hidden;
+    background: grey;
+    padding: 1px;
+    border-radius: 50%;
+    border:  white;
+
+   
+}
+
+.circulfoto img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.famili {
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 60px;
+    margin: 0;
+}
+
+.name {
+    font-family: "Poppins", Arial, sans-serif;
+    margin: 30px 0 0 0;
+    font-size: 60px;
+    max-width: 350px;
+}
+
+.proffi {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 600;
+    
+}
+.lineHidden {
+    visibility: hidden;
+}
+
+.info {
+    margin: 20px 0;
+    width: 48%;
+    padding: 0 30px 0 30px;
+}
+.info-foto, .info-name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 ;
+
+}
+.section-item {
+    position: relative;
+    padding-left: 20px;
+  }
+
+.section-item::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 3px;
+    height: 3px; 
+    border:  rgb(175, 30, 30) 2px solid;
+    border-radius: 50%;
+    margin-top: 4px;
+  }
+
+.pagedown {
+
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 10vh;
+    /* margin: 100px 0 0 0; */
+
+    font-size: 18px;
+    font-weight: 600;
+    width: 100%;
+}
+
+.github {
+    /* margin-top: 5px; */
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+}
+.github-link {
+    color: black;
+}
+
+.github-icon {
+    text-align: start;
+    margin: 10px;
+}
+.github-link:hover  {
+    color: white;
+}
+
+
+.footer-logo {
+    display: flex;
+    align-self: center;
+    justify-items: center;
+    padding: 0;
+}
+
+.footer-img {
+    margin-top: 10px;
+    max-width: 110px;
+    opacity: .8;
+    padding: 0;
+}
+
+.footer-RSS {
+    color: white;
+    margin: 53px 5px 0 5px;
+}
+
+@media (max-width: 810px) {
+    .info {
+      width: 100%;
+    }
+    .github {
+    font-size: 14px;
+      }
+    .nav-list   {
+
+    } 
+    .footer-RSS {
+        font-size: 14px;
+    }
+    .lineHidden {
+        visibility: visible;
+    }
+    .name, .proffi {
+        text-align: center;
+        margin-top: 0;
+        }
+
+  }
+
+@media (max-width: 440px) {
+
+
+    .footer-RSS {
+        font-size: 12px;
+    }
+    .nav {
+        justify-content:flex-end;
+        height: 50px;
+    }
+    .github-link {
+        font-size: 12px;
+    }
+    .footer-img {
+        margin-top: 10px;
+        max-width: 90px;
+        opacity: .8;
+        padding: 0;
+    }
+    .popup {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        background-color: grey;
+        flex-wrap: nowrap;
+        padding: 20px 15px 150px 15px;
+        position:  absolute;
+        top: -1000px;
+        left: 0;
+        z-index: 100;
+        transition: 0.8s all ease-in-out;
+    }
+    .popup.active {
+        top: 0px;
+    }
+    .nav-list {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        margin-top: 50px;
+
+    }
+
+    .burgerLine {
+        background-color: rgb(74, 72, 72);
+        border-radius: 1.5px;
+        width: 30px;
+        height: 3px;
+        margin-bottom: 4px;
+
+    }
+    .mobileBurger {
+        cursor: pointer;
+        position: absolute;
+        right: 30px;
+        z-index: 1;
+    }
+ .closeButton{
+        position: relative;
+        /* left:-41%;
+        top: -9%; */
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        z-index: 1000;
+    }
+  
+    .closeLineOne{
+        position: absolute;
+        top: 15px;
+        transform: rotate(-45deg);
+        background-color: #FFFFFF;
+        border-radius: 1.5px;
+        width: 30px;
+        height: 2px;
+        margin-bottom: 4px;
+    }
+    .closeLineTwo{
+        position: absolute;
+        top: 15px;
+        transform: rotate(45deg);
+        background-color: #FFFFFF;
+        border-radius: 1.5px;
+        width: 30px;
+        height: 2px;
+        margin-bottom: 4px;
+    }
+
+    .famili {
+        font-family: "Poppins", Arial, sans-serif;
+        font-size: 40px;
+        margin: 0;
+    }
+    
+    .name {
+        font-size: 40px;
+        max-width: 350px;
+    }
+    
+    .proffi {
+        font-size: 16px;
+        font-weight: 600;
+    }
+    
+    .title {
+        font-size: 16px;
+        font-weight: 600;
+}  
+.circulfoto {
+    display: flex;
+    max-width: 250px;
+    max-width: 250px;
+   
+}
+
+}
+
