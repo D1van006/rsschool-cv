@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/img/icons/DA-Favicon.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@300;700&display=swap"
+        rel="stylesheet">
+    <title>CV</title>
+</head>
+
+<body>
+    <div class="background">
+    <header>
+        <div class="container header-main">
+            <div class="wrapper">
+                <nav class="nav">
+                    <div class="popup">
+                    <div class="closeButton">
+                        <div class="closeLineOne"></div>
+                        <div class="closeLineTwo"></div>
+                    </div>
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#Contacts">Contacts</a></li>
+                        <li class="nav-item"><a href="#AboutMe">About me</a></li>
+                        <li class="nav-item"><a href="#Courses">Courses</a></li>
+                        <li class="nav-item"><a href="#Skills">Skills</a></li>
+                        <li class="nav-item"><a href="#ExampleCode">Example code</a></li>
+                        <li class="nav-item"><a href="#Education">Education</a></li>
+                        <li class="nav-item"><a href="#English">English</a></li>
+                    </ul>
+                    </div>
+                    <div class="mobileBurger">
+                        <div class="burgerLine"></div>
+                        <div class="burgerLine"></div>
+                        <div class="burgerLine"></div>
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="wrapper">
+            <div class="container">
+                <div class="main-container">
+                    <section class="info info-foto">
+                        <div class="circulfoto ">
+                            <img src="assets/img/ava.jpg" alt="avatar">
+                        </div>
+                    </section>
+                    <section class="info info-name">
+                        <div class="name-proff">
+                            <h1 class="name">Aliaksandr Dzivin</h1>
+                            <h2 class="proffi">junior front-end developer</h2>
+                        </div>
+                    </section>
+
+                    <section class="info">
+                        <h2 class="title" id="Contacts">Contacts</h2>
+                        <ul>
+                            <li class="section-item">BY, Minsk</li>
+                            <li class="section-item">email: d1van28.01.1987@gmail.com</li>
+                            <li class="section-item">discord: D1van</li>
+                            <li class="section-item">github: D1van007</li>
+                            <li class="section-item">telegram: @AD1van</li>
+                        </ul>
+                    </section>
+
+                    <section class="info">
+                        <hr class="lineHidden">
+                        <h2 class="title" id="AboutMe">About me</h2>
+                        <p>I want to change my business completely. At the moment, I'm the chief engineer in a construction
+                            organization. Very responsible, honest, I communicate well with people. At the moment, I want to fulfill my dream and untie myself from my location by working anywhere in the world.
+                        </p>
+                    </section>
+
+                    <section class="info">
+                        <hr>
+                        <h2 class="title" id="Skills">Skills</h2>
+                        <ul>
+                            <li class="section-item">HTML/HTML5</li>
+                            <li class="section-item">CSS/CSS3</li>
+                            <li class="section-item">JavaScript </li>
+                            <li class="section-item">Git&Github</li>
+                            <li class="section-item">Adobe Photoshop</li>
+                            <li class="section-item">Autodesk Autocad</li>
+                        </ul>
+                    </section>
+
+                    <section class="info">
+                        <hr>
+                        <h2 class="title" id="Courses">Courses</h2>
+                        <p>Started learning Html, CSS and JS about 150 hours:</p>
+                        <ul>
+                            <li class="section-item">Rolling Scopes - Pre-School 2022 Q2</li>
+                            <li class="section-item">fructcode.com - HTML/CSS advanced</li>
+                            <li class="section-item">ru.code-basic.com - HTML basic</li>
+                            <li class="section-item">ru.code-basic.com - CSS basic</li>
+                            <li class="section-item">ru.code-basic.com - JS basic</li>
+                        </ul>
+                    </section>
+
+                    <section class="info">
+                        <hr>
+                        <h2 class="title" id="Education">Education</h2>
+                        <p>Belarusian National Technical University</p>
+                        <p>Faculty of energy construction</p>
+                        <p>Specialization: Heat and gas supply, ventilation and air protection</p>
+                        <p>Years: 2004 - 2009</p>
+                    </section>
+
+                    <section class="info">
+                        <hr>
+                        <h2 class="title" id="ExampleCode">Example code</h2>
+                        <pre>
+function bingo(ticket, win){
+let count = 0
+for (let value of ticket) {
+value[0].split('').forEach(item => {
+while (item.charCodeAt() == value[1]){
+    count++; 
+    if (true) return
+}})} 
+return count>=win ? 'Winner!' : 'Loser!' 
+}
+                </pre>
+                    </section>
+
+                    <section class="info">
+                        <hr>
+                        <h2 class="title" id="English">English</h2>
+                        <p>A2. I'm learning English at now, but i need more time.
+                        </p>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-main">
+            <div class="wrapper">
+                <div class="pagedown">
+                    <div class="github">
+                        <img class="github-icon" src="assets/img/icons/github.svg" alt="Github Icon" width="32"
+                            height="32">
+                        <a class="github-link" href="https://github.com/D1van007">
+                            Welcom to my GitHub
+                        </a>
+                    </div>
+                    <p class="footer-RSS">© 2022 The Rolling Scopes</p>
+                    <div class="footer-logo">
+                        <a href="https://rs.school/js/">
+                            <img class="footer-img" src="assets/img/icons/logo_rs2.svg" alt="Logo RSS">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="script.js"></script>
+</body>
+
+</html>
