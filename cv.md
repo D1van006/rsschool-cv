@@ -19,16 +19,15 @@ I want to change my business completely. At the moment, I'm the chief engineer i
 - Autodesk Autocad
 *******
 ## Example code:
-* function bingo(ticket, win){
-let count = 0
-for (let value of ticket) {
-value[0].split('').forEach(item => {
-while (item.charCodeAt() == value[1]){
-    count++; 
-    if (true) return
-}})} 
-return count>=win ? 'Winner!' : 'Loser!' 
-}
+* function duplicateEncode(word){
+    let arrX = []
+    let arr = word.toLowerCase().split('')
+    for (i=0; i < arr.length; i++){
+    if (arr.indexOf(arr[i]) == arr.lastIndexOf(arr[i])){
+        arrX.push("(")
+        } else { arrX.push(")")
+        }}
+  return arrX.join('')}
 *******
 ## Work experience:
 None
